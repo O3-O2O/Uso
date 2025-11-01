@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden; /* tránh tràn chiều ngang */
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: black;
+    
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.menu_main{
+    position:relative;
+    background-color: rgb(188, 40, 139);
+    height: 50px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.menu_1{
+    position:relative;
+    display:flex;
+    justify-content: space-around;
+    line-height: 50px;
+    
+    
+}
+
+.chu{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.chu_12{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.chu1{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.muc{
+    color: black;
+    text-decoration: none;
+    display:none;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.muc_1{
+    color: black;
+    text-decoration: none;
+    display:none;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 999;
+}
+.inp{
+    padding:10px;
+}
+
+.chu:hover{
+    color: red;
+}
+.muc:hover{
+    color:red;
+}
+.chu1:hover{
+    min-height: 200px;
+    background-color: white;
+    color:red;
+    padding: 0 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .muc{
+        display:block;
+        text-align: center;    
+    }
+    .muc_1{
+        display:block;
+        text-align: center;
+    }
+    .chu{
+        display:block;
+        color:black;
+        text-align: center;    
+    }
+    
+    .chu:hover{
+        color: red;
+    }
+}
+
+.container_main{
+    margin-top:100px;
+    position: relative;
+    min-width: 100%;
+}
+
+.container_2{
+    
+    position:relative;
+    display: flex;
+    min-height: 90vh;
+    background-color: rgb(172, 73, 139);
+    width: 80%;
+    left:10%;
+    flex-direction: column;
+    padding:0 0 20px;
+    
+}
+
+.account_cre{
+    margin-top: 30px;
+    position: relative;
+    left:10%;
+    width: 80%;
+    background-color: rgb(227, 92, 182);
+    padding:20px 70px 40px;
+    min-height: auto;
+}
+
+.sign_in_title{
+    font-size: 50px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+
+.form_dn{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-size: 35px;
+    font-weight: bold;
+    gap:50px;
+    min-height: auto;
+}
+
+.butt{
+    margin-top: 50px; 
+    width: 50%; 
+    align-self:center;
+}
+.padd{
+    padding:5px;
+    border-radius: 10px;
+}
+
+.dieu_khoan_control{
+    margin-top:100px;
+    position: relative;
+    bottom:0;
+    min-width: 100%;
+}
+
+.dieu_khoan{
+    position: relative;
+    min-height: 7vh;
+    background-color: rgb(39, 38, 40);
+    left:0;
+    display: flex;
+    align-items: center;
+}
+
+.chu_dk{
+    padding: 10px 20px 20px;
+    position:relative;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1024px){
+    .container_2{    
+        width: 100%;
+        left:0;    
+    }
+
+    .img_dl{
+        flex-direction: column-reverse;
+        gap:100px;
+    }
+
+    .news{
+        width: 100%;
+        
+    }
+
+    .tintuc{
+        text-align: center;
+    }
+
+    .chua_tin_tuc{
+        background-color: rgb(39, 20, 57);
+    }
+
+    .news_2{
+        width: 100%;
+        
+    }
+
+    .chu_dk{
+        font-size: 10px;
+    }
+
+    .form_dn{
+        font-size:30px;
+    }
+    .padd{
+        padding:2px;
+    }
+    .chu{
+        font-size: 15px;
+    }
+    .muc{
+        font-size: 15px;
+    }
+    .chu_12{
+        font-size: 15px;
+    }
+    .muc{
+        max-width:150px;
+    }
+    .muc_1{
+        max-width:150px;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    .chu_dk{
+        font-size: 8px;
+    }
+    .form_dn{
+        font-size:25px;
+    }
+    .muc{
+        max-width:150px;
+    }
+    .muc_1{
+        max-width:150px;
+    }
+    .chu, .muc, .chu_12, .muc_1, .chu1{
+        font-size:13px;
+    }
+}

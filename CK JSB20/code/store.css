@@ -1,0 +1,601 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden; /* tránh tràn chiều ngang */
+}
+
+.bg_img{
+    width: 50px; 
+    height: 50px;
+    background-size: cover; 
+    border-radius:100%; 
+    border:none;
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: black;
+    
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.menu_main{
+    position:relative;
+    background-color: rgb(170, 105, 20);
+    height: 50px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.menu_1{
+    position:relative;
+    display:flex;
+    justify-content: space-around;
+    line-height: 50px;
+    
+    
+}
+
+.chu{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.chu_12{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.chu1{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.muc{
+    color: black;
+    text-decoration: none;
+    display:none;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.store_change{
+
+    color:white;
+    text-decoration: none;
+
+}
+
+.store_change:hover{
+
+    color:red
+
+}
+
+.muc_1{
+    color: black;
+    text-decoration: none;
+    display:none;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.inp{
+    padding:10px;
+}
+
+.chu:hover{
+    color: red;
+}
+
+.muc:hover{
+    color:red;
+}
+
+.chu1:hover{
+    min-height: 200px;
+    background-color: white;
+    color:red;
+    padding: 0 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .muc{
+        display:block;
+        text-align: center;    
+    }
+    .muc_1{
+        display:block;
+        text-align: center;
+    }
+    .chu{
+        display:block;
+        color:black;
+        text-align: center;    
+    }
+    
+    .chu:hover{
+        color: red;
+    }
+}
+
+.container_main{
+    margin-top:100px;
+    position: relative;
+    width: 100%;
+}
+
+.container_2{
+    
+    position:relative;
+    display: flex;
+    min-height: 90vh;
+    width: 80%;
+    left:10%;
+    flex-direction: column;
+    padding:0 0 20px;
+    gap:20px;
+    
+}
+
+.container_2 h1{
+    color:white;
+    font-weight:bold;
+    font-size:50px;
+    text-align: center;
+    margin-top:5px;
+}
+
+.tq{
+    position: relative;
+    min-height:10vh;
+    width:100%;
+    background-color: rgb(85, 78, 59);
+    padding: 0 10% 0;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mau_tq{
+    position:relative; 
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.store_main{
+    width: 100%;
+    
+}
+
+.store_main_1{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    padding: 0 5% 0;
+    gap:20px;
+}
+
+.store_ha{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.store_contain{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding:20px;
+    transition: 0.25s;
+}
+
+/*do sang*/
+.store_ha:hover .store_contain{
+    opacity: 0;
+}
+
+.store_chu_lon{
+    color:white;
+    font-size: 50px;
+    text-align: start;
+}
+
+.store_chu_nho{
+    color:white;
+    font-size: 25px;
+}
+
+.store_dai{
+    width:49%;
+}
+
+.store_chu_lon_1{
+    color:white;
+    font-size: 30px;
+}
+
+.dieu_khoan_control{
+    margin-top:100px;
+    position: relative;
+    bottom:0;
+    min-width: 100%;
+}
+
+.dieu_khoan{
+    position: relative;
+    min-height: 7vh;
+    background-color: rgb(39, 38, 40);
+    left:0;
+    display: flex;
+    align-items: center;
+}
+
+.chu_dk{
+    padding: 10px 20px 20px;
+    position:relative;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.store_main_2{
+
+    width: 90%;
+    padding: 0 0 50px;
+    background-color: rgba(37, 36, 34, 0.778);
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.store_main_3{
+
+    width: 90%;
+    padding: 0 0 50px;
+    background-color: rgba(37, 36, 34, 0.778);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.details-for-payment{
+
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+
+}
+
+.details-for-payment>p{
+    font-size: 50px;
+    color:white;
+}
+
+
+.pay{
+    height: 85%;
+    max-height: 85%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.payment{
+    height:80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.pay::-webkit-scrollbar {
+
+    background: none;       /* Màu chính của thanh cuộn */
+
+}
+
+.name-pay{
+
+    font-size: 30px;
+    color:white;
+
+}
+
+.modify-pay{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-pay{
+    background: none;
+    border: none;
+}
+
+.wait-pay{
+
+    height: 20%;
+    width: 100%;
+    background-color: rgb(67, 66, 64);
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.img-size-modify{
+
+    width: 100%;
+    max-height: 700px;
+
+}
+
+.div-modify{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.info-modify{
+
+    width: 100%;
+    padding: 3% 10% 20px 5%;
+
+}
+
+.orange-font{
+
+    color:rgb(211, 119, 21);
+    font-size: 35px;
+
+}
+
+.support-font{
+
+    color: white;
+    font-size: 25px;
+
+}
+
+.btn-info{
+
+    color:white;
+    font-size: 25px;
+    background-color: rgb(171, 97, 17);
+    border-radius: 20px;
+    padding: 5px 60px;
+    border:none;
+    transition: 0.3s ease-in;
+    width: 30%;
+
+}
+
+.btn-info:hover{
+
+    background-color: rgb(219, 181, 121);
+    scale: 1.1;
+    transition: 0.3s ease-out;
+
+}
+
+@media only screen and (max-width: 1024px){
+
+    .muc-123{
+        font-size: 9px;
+    }
+
+    .support-font{
+
+        font-size: 20px;
+
+    }
+
+    .btn-info{
+
+        font-size: 20px;
+        width: 45%;
+
+    }
+
+    .container_2{    
+        width: 100%;
+        left:0;    
+    }
+
+    .img_dl{
+        flex-direction: column-reverse;
+        gap:100px;
+    }
+
+    .news{
+        width: 100%;
+        
+    }
+
+    .tintuc{
+        text-align: center;
+    }
+
+    .chua_tin_tuc{
+        background-color: rgb(39, 20, 57);
+    }
+
+    .news_2{
+        width: 100%;
+        
+    }
+
+    .chu_dk{
+        font-size: 10px;
+    }
+    .chu{
+        font-size: 15px;
+    }
+    .muc{
+        font-size: 15px;
+    }
+    .chu_12{
+        font-size: 15px;
+    }
+    .muc{
+        max-width:150px;
+    }
+    .muc_1{
+        max-width:150px;
+    }
+
+    .store_2_anh{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .store_dai{
+        width:100%
+    }
+
+    .name-pay{
+
+        font-size: 20px;
+
+    }
+
+    .details-for-payment>p{
+        font-size: 30px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 768px){
+
+    .orange-font{
+
+        font-size: 25px;
+
+    }
+
+    .support-font{
+
+        font-size: 15px;
+
+    }
+
+    .btn-info{
+
+        font-size: 10px;
+        width: 75%;
+
+    }
+
+    .chu_dk{
+        font-size: 8px;
+    }
+    .muc{
+        max-width:150px;
+    }
+    .muc_1{
+        max-width:150px;
+    }
+    .chu, .muc, .chu_12, .muc_1, .chu1{
+        font-size:13px;
+    }
+
+    .name-pay{
+        font-size: 15px;
+    }
+
+
+    .modify-pay{
+
+        width: 35%;
+
+    }
+}
+
+.muc-123{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    background: none;
+    border: white 2px solid;
+    padding:2px 5px;
+    border-radius: 30px;
+    display: none;
+    transition: 0.2s linear;
+}
+
+.avatar-modifier{
+
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    align-items: center;
+
+}
+
+.muc-123:hover{
+
+    background: white;
+    color:black;
+    scale: 1.2;
+    transition: 0.2s linear;
+
+}
+
+.avatar-modifier:hover{
+
+    .muc-123{
+
+        display: block;
+
+    }
+
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sign in - Uso page</title>
+    <link rel="stylesheet" href="../code/login_page.css">
+</head>
+<body>
+
+    <style>
+
+        
+
+    </style>
+    
+    <div class="container">
+
+        <div id="bg-ch" class="background-changer">
+
+            <img src="../hinh anh/HD-Osu-Girl-Wallpapers.png" alt="">
+            <!-- <audio id="bg-music" autoplay>
+                <source src="../music/cYsmix - Triangles - Evire Kurochi (youtube).mp3" type="audio/mpeg">
+            </audio> -->
+
+
+        </div>
+
+        <div class="field-flex m1">
+
+            <fieldset class="field-set-form">
+
+                <legend class="text-form">
+
+                    <span>L</span>
+                    <span>o</span>
+                    <span>g</span>
+                    <span>i</span>
+                    <span>n</span>
+
+                </legend>
+
+                <form id="subm" class="text-field-set-flex">
+
+                    <input id="fname" type="text" class="input-field" placeholder="Username">
+                    <input id="lname" type="text" class="input-field" placeholder="Password">
+                    <div class="catcha">
+
+                        <input id="catcha-take" type="text" class="input-field-catcha" placeholder="captcha">
+
+                        <div class="catcha-container">
+
+                            <label id="catcha-random"></label>
+
+                        </div>
+                        
+
+                    </div>
+
+                    <input type="submit" id="btn-log" class="btn" value="Login">
+
+                </form>
+
+                <div class="btn-changer">
+
+                    <button id="color-log" onclick="login_changer()" class="login-btn">Login</button>
+                    <button id="color-sign" onclick="signIn_changer()" class="signIn-btn">SignIn</button>
+
+                </div>
+
+            </fieldset>
+
+        </div>
+
+        <div class="field-flex m2">
+
+            <fieldset class="field-set-form">
+
+                <legend class="text-form">
+                    
+                    <span>S</span>
+                    <span>i</span>
+                    <span>g</span>
+                    <span>n</span>
+                    <span>I</span>
+                    <span>n</span>
+
+                </legend>
+
+                <form id="form_dn" class="text-field-set-flex">
+
+                    <input id="dnh" type="text" class="input-field" placeholder="Username">
+                    <input id="gma" type="text" class="input-field" placeholder="Email">
+                    <input id="mkh" type="text" class="input-field" placeholder="Password">
+                    <input id="re_mkh" type="text" class="input-field" placeholder="Confirm Password">
+
+                    <input type="submit" id="btn-log" class="btn" value="SignIn">
+                </form>
+
+                <div class="btn-changer">
+
+                    <button id="color-log" onclick="login_changer()" class="login-btn">Login</button>
+                    <button id="color-sign" onclick="signIn_changer()" class="signIn-btn">SignIn</button>
+
+                </div>
+
+                
+
+            </fieldset>
+
+            
+
+        </div>
+
+    </div>
+
+    <script src="../js/login_page.js"></script>
+    <script>
+
+        
+
+    </script>
+
+</body>
+</html>
